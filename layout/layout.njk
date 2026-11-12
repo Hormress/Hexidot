@@ -4,13 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{{ page.title }} - {{ config.title }}</title>
+        {{ custom_styles() | safe }}
     </head>
     <body id="html-body">
         <div id="skrollr-body">
             <div id="container-wrap-wrap">
                 <div id="container-wrap">
                     <div id="container">
-                        <div id="header"></div>
+                        <div id="header">
+                            <h1><a href="{{ config.url }}"><span>{{ config.title }}</span></a></h1>
+                            <h2><span>{{ config.subtitle }}</span></h2>
+                        </div>
                         <div id="content-wrap">
                             <div id="side-bar"></div>
                             <div id="main-content">
