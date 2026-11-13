@@ -1,0 +1,7 @@
+nav:
+  top:
+    mode: page
+    url: 'nav/top'
+  side:
+    mode: page
+    url: 'nav/side'

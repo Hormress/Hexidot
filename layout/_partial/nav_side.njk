@@ -1,0 +1,5 @@
+{% if theme.nav.side.mode == 'page' %}
+<div id="side-bar">
+    {{ get_page(theme.nav.side.url) | safe }}
+</div>
+{% endif %}

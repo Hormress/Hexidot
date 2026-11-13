@@ -14,7 +14,7 @@
                         <div id="header">
                             <h1><a href="{{ config.url }}"><span>{{ config.title }}</span></a></h1>
                             <h2><span>{{ config.subtitle }}</span></h2>
-                            <div id="top-bar"></div>
+                            {{ partial("_partial/nav_top.njk") | safe }}
                             <div id="search-top-box">{{ hexidot_search_form({class: '', button: __('search'), text: __('search_this_site')}) | safe }}</div>
                             <div id="login-status"></div>
                             <div id="header-extra-div-1"></div>
@@ -22,7 +22,7 @@
                             <div id="header-extra-div-3"></div>
                         </div>
                         <div id="content-wrap">
-                            <div id="side-bar"></div>
+                            {{ partial("_partial/nav_side.njk") | safe }}
                             <div id="main-content">
                                 {{ body | safe }}
                             </div>
