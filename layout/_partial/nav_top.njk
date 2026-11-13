@@ -1,5 +1,5 @@
 <div id="top-bar">
     {% if theme.nav.top.mode == 'page' %}
-    {{ get_page(theme.nav.top.url) | safe }}
+    {{ nav_top_process(get_page(theme.nav.top.url)) | safe }}
     {% endif %}
 </div>
