@@ -1,2 +1,2 @@
-<div id="page-title">{{ page.title }}</div>
+{% if page.title %}<div id="page-title">{{ page.title }}</div>{% endif %}
 <div id="page-content">{{ page.content | safe }}</div>
