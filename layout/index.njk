@@ -1,2 +1,5 @@
 {% if page.title %}<div id="page-title">{{ page.title }}</div>{% endif %}
 <div id="page-content">{{ page.content | safe }}</div>
+{% if page.tags %}<div class="page-tags"><span>
+    {{ list_tags(page.tags, {style: false, show_count: false, separator: ''}) | safe }}
+</span></div>{% endif %}
