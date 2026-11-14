@@ -1,5 +1,12 @@
 {% if page.title %}<div id="page-title">{{ page.title }}</div>{% endif %}
-<div id="page-content">{{ page.content | safe }}</div>
+<div id="page-content">
+    {% if page.categories %}
+        <div class="breadcrumbs">
+        {{ list_categories(page.categories, {style: false, show_count: false, separator: ' » '}) | safe  }} » {{ page.title }}
+        </div>
+    {% endif %}
+    {{ page.content | safe }}
+</div>
 {% if page.tags %}<div class="page-tags"><span>
     {{ list_tags(page.tags, {style: false, show_count: false, separator: ''}) | safe }}
 </span></div>{% endif %}
