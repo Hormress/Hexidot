@@ -28,8 +28,8 @@
                                 {{ body | safe }}
                             </div>
                         </div>
-                        <div id="footer"></div>
-                        <div id="license-area"></div>
+                        <div id="footer">{{ partial("_partial/footer.njk") | safe }}</div>
+                        <div id="license-area" class="license-area">{{ partial("_partial/license_area.njk") | safe }}</div>
                         <div id="extrac-div-1"></div>
                         <div id="extrac-div-2"></div>
                         <div id="extrac-div-3"></div>

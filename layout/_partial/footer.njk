@@ -1,0 +1,6 @@
+<div class="options">
+    {% if theme.nav.side.mode == 'page' %}
+    {{ get_page(theme.nav.footer.url) | safe }}
+    {% endif %}
+</div>
+{{ __('powered_by') }} <a href="https://hexo.io">Hexo</a>

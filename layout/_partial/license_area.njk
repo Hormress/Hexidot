@@ -1,0 +1,4 @@
+{% if (page.license) %}
+    {{ __('page_license_text') }} <a href="{{ page.license.url }}">{{ page.license.type }}</a>
+{% endif %}
+{{ __('license_text') }} <a href="{{ theme.license.url }}">{{ theme.license.type }}</a>

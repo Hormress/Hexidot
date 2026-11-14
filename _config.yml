@@ -5,3 +5,9 @@ nav:
   side:
     mode: page
     url: 'nav/side'
+  footer:
+    mode: page
+    url: 'nav/footer'
+license:
+  type: CC BY-SA 4.0 International
+  url: 'https://creativecommons.org/licenses/by-sa/4.0/'
