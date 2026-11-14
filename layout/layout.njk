@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% if page.title %}{{ page.title }} - {% endif %}{{ config.title }}</title>
         {{ custom_styles() | safe }}
+        {{ custom_scripts() | safe }}
     </head>
     <body id="html-body">
         <div id="skrollr-body">
